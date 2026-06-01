@@ -1,0 +1,13 @@
+macropub.io/
+│
+├── index.html        (home)
+├── blog.html         (blog list)
+├── projects.html     (portfolio)
+├── dashboard.html    (analytics)
+│
+├── posts/
+│   ├── post1.html
+│   ├── post2.html
+│
+├── style.css
+└── script.js
