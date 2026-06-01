@@ -1,92 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MacroPub</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      text-align: center;
-    }
-    header {
-      padding: 80px 20px;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #94a3b8;
-    }
-    .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #22c55e;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-    }
-    section {
-      padding: 60px 20px;
-    }
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      width: 250px;
-      border-radius: 10px;
-    }
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #64748b;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MacroPub</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #020617;
+    color: #e2e8f0;
+  }
+
+  /* NAVBAR */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    background: rgba(2, 6, 23, 0.7);
+    backdrop-filter: blur(10px);
+  }
+
+  nav h2 {
+    color: #22c55e;
+    margin: 0;
+  }
+
+  nav a {
+    color: #cbd5f5;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+
+  .hero span {
+    color: #22c55e;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+  }
+
+  .btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #22c55e, #4ade80);
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* SECTION */
+  section {
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  /* CARDS */
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .card {
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .card h3 {
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: #94a3b8;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+  }
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>MacroPub</h1>
-  <p>Data · Security · AI Insights</p>
-  <a href="#" class="btn">Explore Insights</a>
-</header>
+<nav>
+  <h2>MacroPub</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Insights</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Where <span>Data</span> Meets Intelligence</h1>
+  <p>Security, Analytics, and AI—translated into clarity and action.</p>
+  <a href="#" class="btn">Start Exploring</a>
+</div>
 
 <section>
-  <h2>What We Do</h2>
+  <h2>Core Focus</h2>
   <div class="cards">
+
     <div class="card">
       <h3>📊 Data Analytics</h3>
-      <p>Transform data into meaningful insights and decisions.</p>
+      <p>Transform raw data into meaningful strategy and decisions.</p>
     </div>
+
     <div class="card">
-      <h3>🔐 Security</h3>
-      <p>Explore modern cybersecurity and risk intelligence.</p>
+      <h3>🔐 Cybersecurity</h3>
+      <p>Understand threats, risks, and protection in a digital world.</p>
     </div>
+
     <div class="card">
-      <h3>🤖 AI & ML</h3>
-      <p>Understand machine learning and real-world AI impact.</p>
+      <h3>🤖 Artificial Intelligence</h3>
+      <p>Explore machine learning and real-world AI applications.</p>
     </div>
+
   </div>
 </section>
 
 <section>
-  <h2>About</h2>
-  <p>
-    MacroPub is a platform for exploring data, security, and artificial intelligence.
-    Built to share knowledge and create impact through innovation.
+  <h2>Vision</h2>
+  <p style="max-width: 600px; margin: auto;">
+    MacroPub is more than a blog. It is a digital platform where ideas,
+    data, and intelligence converge to empower decision-making.
   </p>
 </section>
 
@@ -96,3 +166,4 @@
 
 </body>
 </html>
+
