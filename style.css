@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  background: #020617;
+  color: white;
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card, .post {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-decoration: none;
+  color: white;
+}
+
+.card a, .post p {
+  color: #94a3b8;
+}
+``
